@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import ScheduleButton from '../components.js'
+import ScheduleButton from '../src/components'
 
 
 describe('ScheduleButton Component', function() {

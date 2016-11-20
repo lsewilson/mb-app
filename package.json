@@ -4,7 +4,10 @@
   "description": "The calendar component of the Movebubble app built using React",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/.setup.js test/*-test.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "mocha test/.setup.js test/*-test.js",
+    "eject": "react-scripts eject"
   },
   "author": "Laura Wilson",
   "license": "ISC",
@@ -19,7 +22,8 @@
     "enzyme": "^2.6.0",
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
-    "react-addons-test-utils": "^15.4.0"
+    "react-addons-test-utils": "^15.4.0",
+    "react-scripts": "^0.7.0"
   },
   "dependencies": {
     "react": "^15.4.0",
