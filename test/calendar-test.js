@@ -14,5 +14,5 @@ describe('Calendar Component', function() {
 
   it ('should have a class named calendar', function() {
     expect(wrapper.is('.calendar')).to.equal(true);
-  })
+  });
 })
