@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import Calendar from '../src/components'
+import Calendar from '../src/calendar'
 
 
 describe('Calendar Component', function() {
