@@ -4,7 +4,7 @@ class MinimizeBox extends React.Component {
   render() {
     return (
       <div className="minimize-box">
-        <img src="img/arrow.png"/>
+        <img src={require("./img/arrow.png")}/>
       </div>
     );
   }
