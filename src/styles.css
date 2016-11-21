@@ -10,7 +10,6 @@ body {
 
 #container {
   height: 100vh;
-  width: 100vh;
 }
 
 .schedule-button {
@@ -35,4 +34,11 @@ body {
 .minimize-box img {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+.instruction-box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: left;
 }

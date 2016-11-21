@@ -7,6 +7,10 @@ class Calendar extends React.Component {
     return (
       <div className="calendar">
         <MinimizeBox />
+        <div className="instruction-box">
+          <p>Pick times that suit you.</p>
+          <p>Well talk to the agent and book it in.</p>
+        </div>
       </div>
     );
   }
