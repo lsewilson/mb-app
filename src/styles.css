@@ -22,3 +22,17 @@ body {
   background-color: #1d85ce;
   vertical-align: middle;
 }
+
+.minimize-box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #222e2a;
+  top:0;
+  float:left;
+}
+
+.minimize-box img {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
