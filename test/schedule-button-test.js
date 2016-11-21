@@ -21,4 +21,8 @@ describe('ScheduleButton Component', function() {
   it ('should contain text "SCHEDULE A VIEWING!"', function() {
     expect(wrapper.text()).to.equal('SCHEDULE A VIEWING!');
   })
+  it ('should not be visible after clicking', function(){
+    const mount_wrapper = mount(<ScheduleButton />)
+    mount_wrapper.find('.schedule-button').simulate('click');
+  })
 })
