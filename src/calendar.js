@@ -7,7 +7,17 @@ class Calendar extends React.Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      currentDay: ''
+    };
     this.handleClick = this.handleClick.bind(this);
+    this.handleDaySelection = this.handleDaySelection.bind(this);
+  }
+
+  handleDaySelection(day) {
+    this.setState({
+      currentDay: day
+    });
   }
 
   handleClick() {
@@ -22,7 +32,7 @@ class Calendar extends React.Component {
           <p>Pick times that suit you.</p>
           <p>Well talk to the agent and book it in.</p>
         </div>
-        <DatesBox />
+        <DatesBox onSelectDay={this.handleDaySelection}/>
 
       </div>
     );

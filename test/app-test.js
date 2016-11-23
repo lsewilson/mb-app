@@ -23,15 +23,15 @@ describe('App Component', function() {
     expect(wrapper.children().length).to.equal(2);
   });
 
-  it ('should contain Button component', function() {
-    expect(wrapper.containsMatchingElement(
-      <Button />)).to.equal(true);
-  });
-
-  it ('should contain Calendar component', function() {
-    expect(wrapper.containsMatchingElement(
-      <Calendar />)).to.equal(true);
-  });
+  // it ('should contain Button component', function() {
+  //   expect(wrapper.containsMatchingElement(
+  //     <Button />)).to.equal(true);
+  // });
+  //
+  // it ('should contain Calendar component', function() {
+  //   expect(wrapper.containsMatchingElement(
+  //     <Calendar />)).to.equal(true);
+  // });
 
   describe('handleClick', function() {
     it ('should change the show state of the calendar', function(){
