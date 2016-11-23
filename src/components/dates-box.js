@@ -1,4 +1,5 @@
 import React from 'react';
+import DateOption from './date-option'
 
 class DatesBox extends React.Component {
 
@@ -21,11 +22,11 @@ class DatesBox extends React.Component {
 
     return (
       <div className="dates-box">
-        <button className="date" onClick={() => this.handleChange(dateList[0])}>day1</button>
-        <button className="date" onClick={() => this.handleChange(dateList[1])}>day2</button>
-        <button className="date" onClick={() => this.handleChange(dateList[2])}>day3</button>
-        <button className="date" onClick={() => this.handleChange(dateList[3])}>day4</button>
-        <button className="date" onClick={() => this.handleChange(dateList[4])}>day5</button>
+        <button className="date" onClick={() => this.handleChange(dateList[0])}><DateOption dateValue={dateList[0]} /> </button>
+        <button className="date" onClick={() => this.handleChange(dateList[1])} ><DateOption dateValue={dateList[1]} /> </button>
+        <button className="date" onClick={() => this.handleChange(dateList[2])}><DateOption dateValue={dateList[2]} /> </button>
+        <button className="date" onClick={() => this.handleChange(dateList[3])}><DateOption dateValue={dateList[3]} /> </button>
+        <button className="date" onClick={() => this.handleChange(dateList[4])} ><DateOption dateValue={dateList[4]} /> </button>
       </div>
     );
   }
