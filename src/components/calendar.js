@@ -1,7 +1,7 @@
 import React from 'react';
 import MinimizeBox from './minimize-box'
 import DatesBox from './dates-box'
-
+import TimesBox from './times-box'
 
 class Calendar extends React.Component {
 
@@ -33,7 +33,7 @@ class Calendar extends React.Component {
           <p>Well talk to the agent and book it in.</p>
         </div>
         <DatesBox onSelectDay={this.handleDaySelection}/>
-
+        <TimesBox />
       </div>
     );
   }

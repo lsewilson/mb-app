@@ -5,7 +5,7 @@ import { shallow, mount, render } from 'enzyme';
 import DatesBox from '../src/components/dates-box'
 
 
-describe('Calendar Component', function() {
+describe('DatesBox Component', function() {
 
   let wrapper;
 
