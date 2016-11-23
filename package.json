@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "The calendar component of the Movebubble app built using React",
   "main": "index.js",
+  "homepage": "http://lsewilson.github.io/mb-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha test/.setup.js test/*-test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "author": "Laura Wilson",
   "license": "ISC",
@@ -20,6 +22,7 @@
     "chai": "^3.5.0",
     "cheerio": "^0.22.0",
     "enzyme": "^2.6.0",
+    "gh-pages": "^0.12.0",
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "react-addons-test-utils": "^15.4.0",
