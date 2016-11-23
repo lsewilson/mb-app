@@ -1,6 +1,6 @@
 # Movebubble App Calendar Feature
 
-This repo contains a recreation of the 'Book a Viewing' feature on the Movebubble app and has been created using React. A demo has been hosted using GitHub pages and can be seen [here](https://lsewilson.github.io/mb-app/). It is best viewed on a mobile device, or as a mobile device in a browser (instructions below).
+This repo contains a recreation of the 'Book a Viewing' feature on the Movebubble app and has been created using React. A demo has been hosted using GitHub pages and can be seen [here](https://lsewilson.github.io/movebubble-app-feature/). It is best viewed on a mobile device, or as a mobile device in a browser (instructions below).
 
 ## Installation
 
@@ -63,11 +63,11 @@ Click 'Toggle device toolbar' in the top left corner of the window to change to 
 
 ## Approach to solution
 
-I started by templating the app with plain HTML files so that I could understand what components I needed to build the app using React. I have included the files [here](https://github.com/lsewilson/mb-app/tree/master/templates).
+I started by templating the app with plain HTML files so that I could understand what components I needed to build the app using React. I have included the files [here](https://github.com/lsewilson/movebubble-app-feature/tree/master/templates).
 
 From there I built up the bits of the button and calendar components, added the transition in to switch between the two, built out the rest of the date boxes and times and then worked on feeding the information back into a post request.
 
-Once I had a basic shell working and submitting booking requests, I worked out some of the bugs.
+Once I had a basic shell working and submitting booking requests, I worked out some of the bugs:
 
 - Rendering dates dynamically: added the library 'Moment' to help with this.
 - Changing the text on the button: I originally had difficulty with the asynchronicity of the setState() function. I solved this by including the functions that were dependent on the new state as a callback function.

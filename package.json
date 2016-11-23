@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The calendar component of the Movebubble app built using React",
   "main": "index.js",
-  "homepage": "http://lsewilson.github.io/mb-app",
+  "homepage": "http://lsewilson.github.io/movebubble-app-feature",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
