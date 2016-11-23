@@ -14,19 +14,21 @@ describe('Button Component', function() {
   });
 
   it ('should have a class named schedule-button', function() {
-    expect(wrapper.is('.schedule-button')).to.equal(true);
+    expect(wrapper.is('.button')).to.equal(true);
   })
+
   it ('should have one child element', function() {
     expect(wrapper.children().length).to.equal(1);
   })
+
   it ('should contain text from text prop', function() {
     expect(wrapper.text()).to.equal("Schedule a viewing!");
   })
+  
   it ('is a clickable button', function(){
     const handleClick = sinon.spy()
     const mount_wrapper = mount(<Button onClick={handleClick}/>)
-    mount_wrapper.find('.schedule-button').simulate('click');
+    mount_wrapper.find('.button').simulate('click');
     expect(handleClick).to.have.property('callCount', 1);
-
   })
 })

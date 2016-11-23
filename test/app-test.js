@@ -11,13 +11,20 @@ describe('App Component', function() {
     wrapper = shallow(<App />);
   });
 
-  it ('should have one child element', function() {
-    expect(wrapper.children().length).to.equal(1);
-  }); // brittle test?
+  it ('should have an initial show calendar state of false', function() {
+    expect(wrapper.state().calendarShown).to.equal(false)
+  });
 
-  it ('should contain Button', function() {
-    expect(wrapper.containsMatchingElement(
-      <Button />)).to.equal(true);
+  it ('should have two child elements', function() {
+    expect(wrapper.children().length).to.equal(2);
+  });
+
+  describe('handleClick', function() {
+    it ('should change the show state of the calendar', function(){
+      wrapper.instance().handleClick()
+      expect(wrapper.state().calendarShown).to.equal(true)
+    });
+
   });
 
   // test for CSS transitions required

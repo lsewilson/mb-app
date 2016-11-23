@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render() {
     let btnText = this.state.calendarShown ? 'SELECT MULTIPLE TIMESLOTS' : 'SCHEDULE A VIEWING!';
-    let component = this.state.calendarShown ? <Calendar  /> : '';
+    let component = this.state.calendarShown ? <Calendar calendarShown={this.handleClick}/> : '';
 
     return (
       <div>
