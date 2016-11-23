@@ -1,5 +1,6 @@
 import React from 'react';
 import DateOption from './date-option'
+import Moment from 'moment'
 
 class DatesBox extends React.Component {
 
@@ -13,11 +14,13 @@ class DatesBox extends React.Component {
   }
 
   render() {
-    let date1 = new Date(2016, 10, 23);
-    let date2 = new Date(2016, 10, 24);
-    let date3 = new Date(2016, 10, 25);
-    let date4 = new Date(2016, 10, 26);
-    let date5 = new Date(2016, 10, 27);
+
+    let date1 =  new Moment()._d
+    let date2 = new Moment().add(1, 'day')._d
+    let date3 = new Moment().add(2, 'day')._d
+    let date4 = new Moment().add(3, 'day')._d
+    let date5 = new Moment().add(4, 'day')._d
+
     let dateList = [date1, date2, date3, date4, date5]
 
     return (
