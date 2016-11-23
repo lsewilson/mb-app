@@ -59,7 +59,7 @@ Click 'Toggle device toolbar' in the top left corner of the window to change to 
 
 ## Approach to solution
 
-I started by templating the app with plain HTML files so that I could understand what components I needed to build the app using React. I have included the files [here](#).
+I started by templating the app with plain HTML files so that I could understand what components I needed to build the app using React. I have included the files [here](https://github.com/lsewilson/mb-app/tree/master/templates).
 
 From there, I proceeded to develop the 'Schedule a Viewing' button and the simpler parts of the Calendar element. As I tried to implement some kind of transition between the button component and calendar component, it became obvious that I needed an overall App parent component where both components would be child components of it. Also, I decided that the button should be a single component whose state I could update rather than showing and hiding different buttons constantly.
 
