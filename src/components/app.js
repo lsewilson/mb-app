@@ -10,17 +10,31 @@ class App extends React.Component {
     super(props);
     this.state = {
       calendarShown: false,
-      bookings: []
+      bookings: [],
+      btnText: "SCHEDULE A VIEWING!"
     }
     this.handleClick = this.handleClick.bind(this);
+    this.updateButton = this.updateButton.bind(this);
+
   };
 
   handleClick() {
     if (this.state.bookings.length > 0 ) {
       this.postData();
-      this.setState({ bookings: [] });
+
+      this.setState({ bookings: [] , btnText: "SCHEDULE A VIEWING!" }, function(){
+        this.updateButton();
+      });
     }
-    this.setState({ calendarShown: !this.state.calendarShown })
+    this.setState({ calendarShown: !this.state.calendarShown }, function(){
+      this.updateButton();
+    })
+  }
+
+  updateButton() {
+    let timeslots = this.state.bookings.length > 0 ? 'SEND TIMESLOTS' : 'SELECT MULTIPLE TIMESLOTS'
+    let btnText = this.state.calendarShown ? timeslots : 'SCHEDULE A VIEWING!';
+    this.setState({ btnText: btnText })
   }
 
   postData() {
@@ -34,12 +48,11 @@ class App extends React.Component {
   }
 
   render() {
-    let btnText = this.state.calendarShown ? 'SELECT MULTIPLE TIMESLOTS' : 'SCHEDULE A VIEWING!';
-    let component = this.state.calendarShown ? <Calendar calendarShown={this.handleClick} bookings={this.state.bookings} /> : '';
+    let component = this.state.calendarShown ? <Calendar calendarShown={this.handleClick} bookings={this.state.bookings} updateButton={this.updateButton} /> : '';
 
     return (
       <div className="app">
-        <Button text={btnText} onClick={this.handleClick}/>
+        <Button text={this.state.btnText} onClick={this.handleClick}/>
         <ReactCSSTransitionGroup
           transitionName={"slide"}
           transitionEnterTimeout={300}
