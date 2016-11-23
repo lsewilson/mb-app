@@ -37,6 +37,17 @@ describe('TimeOption Component', function() {
       expect(wrapper.instance().props.bookings[0].time).to.equal("Morning");
     })
 
+    it ('should remove booking day data to bookings prop if it already exists', function() {
+      let wrapper2 = shallow(
+        <TimeOption
+        text={"Morning"}
+        currentDay={"Wednesday"}
+        bookings={[{date: "Wednesday", time: "Morning"}]}/>
+      );
+      wrapper2.instance().handleClick();
+      expect(wrapper2.instance().props.bookings).to.be.empty;
+    })
+
   })
 
 })
