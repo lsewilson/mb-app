@@ -20,4 +20,6 @@ describe('App Component', function() {
       <Button />)).to.equal(true);
   });
 
+  // test for CSS transitions required
+
 });

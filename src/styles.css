@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-.schedule-button {
+.button {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -41,4 +41,28 @@ body {
   text-align: center;
   position: relative;
   float: left;
+}
+
+/*CSS Transitions*/
+
+.slide-enter {
+  max-height : 1000px;
+  transition-property: max-height;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-enter.slide-enter-active {
+  max-height : 1000px;
+}
+
+.slide-leave {
+  max-height : 0px;
+  transition-property: max-height;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-leave.slide-leave-active {
+  max-height : 0;
 }
