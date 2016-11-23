@@ -56,6 +56,32 @@ body {
   background-color: #229a74;
   border-color: black;
 }
+.date-text {
+  font-size: 0.8em;
+}
+
+.lg-date-text {
+  font-size: 1.2em;
+}
+
+.times-box{
+  width: 100%;
+  position: relative;
+  float: left;
+  overflow: auto;
+}
+
+.time {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  float: left;
+  border-bottom-width:0.1em;
+  border-bottom-style: solid;
+  background-color: #f0f2f1;
+  border-bottom-color:#d1d2d4;
+}
+
 
 
 /*CSS Transitions*/
