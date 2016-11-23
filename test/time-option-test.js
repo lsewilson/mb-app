@@ -22,7 +22,7 @@ describe('TimeOption Component', function() {
   });
 
   it ('should have a bookings prop', function (){
-     expect(wrapper.props('bookings')).to.exist;
+     expect(wrapper.instance().props.bookings).to.exist;
   })
 
   describe('handleClick', function() {

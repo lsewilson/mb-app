@@ -1,6 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
+import sinon from 'sinon';
 import Calendar from '../src/components/calendar'
 import { MinimizeBox } from '../src/components/minimize-box'
 
@@ -10,7 +11,7 @@ describe('Calendar Component', function() {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<Calendar />);
+    wrapper = shallow(<Calendar calendarShown={true}/>);
   });
 
   it ('should have a class named calendar', function() {
@@ -26,6 +27,10 @@ describe('Calendar Component', function() {
       <MinimizeBox />)).to.equal(true);
   });
 
+  it ('should have a calendarShown prop', function (){
+     expect(wrapper.instance().props.calendarShown).to.exist;
+  })
+
   describe('handleDaySelection', function() {
 
     it ('should change the currentDay state', function() {
@@ -35,11 +40,4 @@ describe('Calendar Component', function() {
 
   })
 
-  // describe('handleClick', function() {
-  //
-  //   it ('calls calendarShown prop', function() {
-  //
-  //   })
-  //
-  // })
 })
