@@ -13,15 +13,27 @@ class DatesBox extends React.Component {
     this.props.onSelectDay(day);
   }
 
-  render() {
-
-    let date1 =  new Moment()._d
+  createDateList() {
+    let date1 = new Moment()._d
     let date2 = new Moment().add(1, 'day')._d
     let date3 = new Moment().add(2, 'day')._d
     let date4 = new Moment().add(3, 'day')._d
     let date5 = new Moment().add(4, 'day')._d
+    let list = [date1, date2, date3, date4, date5]
 
-    let dateList = [date1, date2, date3, date4, date5]
+    list.forEach(function(date,i) {
+      if (date.getDay() === 0 ) {
+        list.splice(i,1)
+        list.push(new Moment().add(5,'day')._d)
+      }
+    });
+    return list;
+  }
+
+  render() {
+
+
+    let dateList = this.createDateList()
 
     return (
       <div className="dates-box">
