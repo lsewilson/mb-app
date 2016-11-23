@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { shallow, mount, render } from 'enzyme';
-import MinimizeBox from '../src/minimize-box'
+import MinimizeBox from '../src/components/minimize-box'
 
 
 // describe('MinimizeBox Component', function() {

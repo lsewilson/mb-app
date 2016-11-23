@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { shallow, mount, render } from 'enzyme';
-import Button from '../src/button'
+import Button from '../src/components/button'
 
 
 describe('Button Component', function() {
@@ -24,7 +24,7 @@ describe('Button Component', function() {
   it ('should contain text from text prop', function() {
     expect(wrapper.text()).to.equal("Schedule a viewing!");
   })
-  
+
   it ('is a clickable button', function(){
     const handleClick = sinon.spy()
     const mount_wrapper = mount(<Button onClick={handleClick}/>)

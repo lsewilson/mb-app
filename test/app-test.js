@@ -1,9 +1,9 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import App from '../src/app';
-import { Button } from '../src/button';
-import { Calendar } from '../src/calendar';
+import App from '../src/components/app';
+import { Button } from '../src/components/button';
+import { Calendar } from '../src/components/calendar';
 
 
 

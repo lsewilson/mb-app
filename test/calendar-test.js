@@ -1,8 +1,8 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import Calendar from '../src/calendar'
-import { MinimizeBox } from '../src/minimize-box'
+import Calendar from '../src/components/calendar'
+import { MinimizeBox } from '../src/components/minimize-box'
 
 
 describe('Calendar Component', function() {

@@ -2,7 +2,7 @@ import React from 'react';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { shallow, mount, render } from 'enzyme';
-import DatesBox from '../src/dates-box'
+import DatesBox from '../src/components/dates-box'
 
 
 describe('Calendar Component', function() {
