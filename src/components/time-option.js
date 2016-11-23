@@ -8,7 +8,7 @@ class TimeOption extends React.Component {
   };
 
   handleClick() {
-    console.log("time option was clicked!")
+    this.props.bookings.push({date: this.props.currentDay, time: this.props.text})
   }
 
   render() {
