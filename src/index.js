@@ -1,16 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ScheduleButton from './schedule-button';
-import Calendar from './calendar';
+import App from './app';
 
 import './styles.css';
 
-// ReactDOM.render(
-//   <ScheduleButton/>,
-//   document.getElementById('container')
-// );
-
 ReactDOM.render(
-  <Calendar/>,
+  <App/>,
   document.getElementById('container')
 );

@@ -1,10 +1,10 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 class MinimizeBox extends React.Component {
   render() {
     return (
       <div className="minimize-box">
-        <img src={require("./img/arrow.png")}/>
+        <img src={require('./img/arrow.png')}/>
       </div>
     );
   }

@@ -23,7 +23,8 @@
     "jsdom": "^9.8.3",
     "mocha": "^3.1.2",
     "react-addons-test-utils": "^15.4.0",
-    "react-scripts": "^0.7.0"
+    "react-scripts": "^0.7.0",
+    "sinon": "^1.17.6"
   },
   "dependencies": {
     "react": "^15.4.0",
