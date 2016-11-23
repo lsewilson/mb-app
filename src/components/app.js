@@ -32,7 +32,7 @@ class App extends React.Component {
 
   updateButton() {
     let numSlots = this.state.bookings.length
-    let timeslots = this.state.bookings.length > 0 ? 'SEND ' + numSlots +' TIMESLOTS' : 'SELECT MULTIPLE TIMESLOTS'
+    let timeslots = numSlots > 0 ? 'SEND ' + numSlots +' TIMESLOTS' : 'SELECT MULTIPLE TIMESLOTS'
     let btnText = this.state.calendarShown ? timeslots : 'SCHEDULE A VIEWING!';
     this.setState({ btnText: btnText })
   }
