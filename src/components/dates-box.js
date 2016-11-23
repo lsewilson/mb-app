@@ -14,17 +14,17 @@ class DatesBox extends React.Component {
   }
 
   createDateList() {
-    let date1 = new Moment()._d
-    let date2 = new Moment().add(1, 'day')._d
-    let date3 = new Moment().add(2, 'day')._d
-    let date4 = new Moment().add(3, 'day')._d
-    let date5 = new Moment().add(4, 'day')._d
-    let list = [date1, date2, date3, date4, date5]
+    let date1 = new Moment().format("ddd D MMM");
+    let date2 = new Moment().add(1, 'day').format("ddd D MMM");
+    let date3 = new Moment().add(2, 'day').format("ddd D MMM");
+    let date4 = new Moment().add(3, 'day').format("ddd D MMM");
+    let date5 = new Moment().add(4, 'day').format("ddd D MMM");
+    let list = [date1, date2, date3, date4, date5];
 
     list.forEach(function(date,i) {
-      if (date.getDay() === 0 ) {
-        list.splice(i,1)
-        list.push(new Moment().add(5,'day')._d)
+      if (date.substr(0, 3) === "Sun" ) {
+        list.splice(i,1);
+        list.push(new Moment().add(5,'day').format("ddd D MMM"));
       }
     });
     return list;
@@ -32,8 +32,7 @@ class DatesBox extends React.Component {
 
   render() {
 
-
-    let dateList = this.createDateList()
+    let dateList = this.createDateList();
 
     return (
       <div className="dates-box">

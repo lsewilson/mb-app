@@ -1,7 +1,4 @@
 import React from 'react';
-import Time from 'react-time'
-
-const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 class DateOption extends React.Component {
 
@@ -11,13 +8,13 @@ class DateOption extends React.Component {
     return (
       <div>
         <span className="date-text">
-          {weekdays[day.getDay()]}<br/>
+          {day.substr(0, 3)}<br/>
         </span>
         <span className="lg-date-text">
-          {<Time value={day} format="DD"/>}<br/>
+          {day.substr(4,2)}<br/>
         </span>
         <span className="date-text">
-          {<Time value={day} format="MMM"/>}
+          {day.substr(7, 3)}
         </span>
       </div>
     );
