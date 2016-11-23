@@ -43,6 +43,21 @@ body {
   float: left;
 }
 
+.dates-box {
+  position: relative;
+  float:left;
+  width: 100%;
+}
+.date {
+  width: 20%;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #229a74;
+  border-color: black;
+}
+
+
 /*CSS Transitions*/
 
 .slide-enter {

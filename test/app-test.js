@@ -1,7 +1,11 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import App from '../src/app'
+import App from '../src/app';
+import { Button } from '../src/button';
+import { Calendar } from '../src/calendar';
+
+
 
 describe('App Component', function() {
 
@@ -17,6 +21,16 @@ describe('App Component', function() {
 
   it ('should have two child elements', function() {
     expect(wrapper.children().length).to.equal(2);
+  });
+
+  it ('should contain Button component', function() {
+    expect(wrapper.containsMatchingElement(
+      <Button />)).to.equal(true);
+  });
+
+  it ('should contain Calendar component', function() {
+    expect(wrapper.containsMatchingElement(
+      <Calendar />)).to.equal(true);
   });
 
   describe('handleClick', function() {

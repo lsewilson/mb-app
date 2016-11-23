@@ -16,8 +16,8 @@ describe('Calendar Component', function() {
   it ('should have a class named calendar', function() {
     expect(wrapper.is('.calendar')).to.equal(true);
   });
-  it ('should have one child element', function() {
-    expect(wrapper.children().length).to.equal(2);
+  it ('should have three child elements', function() {
+    expect(wrapper.children().length).to.equal(3);
   });
   it ('should contain MinimizeBox', function() {
     expect(wrapper.containsMatchingElement(
