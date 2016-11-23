@@ -22,6 +22,11 @@ body {
   vertical-align: middle;
 }
 
+.btn-text {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
 .minimize-box {
   width: 100%;
   text-align: center;
@@ -50,14 +55,16 @@ body {
 }
 .date {
   width: 20%;
+  display: inline-block;
   text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-color: #229a74;
   background-color: #229a74;
-  border-color: black;
 }
 .date-text {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .lg-date-text {

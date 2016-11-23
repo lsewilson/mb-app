@@ -29,6 +29,7 @@ describe('TimeOption Component', function() {
 
     it ('should push booking data to bookings prop', function() {
       wrapper.instance().handleClick();
+      console.log(wrapper.props.bookings)
       expect(wrapper.props('bookings')).to.equal([{date: "Wednesday", time:"Morning"}]);
     })
 

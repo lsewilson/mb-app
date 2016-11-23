@@ -10,7 +10,7 @@ describe('DateOption Component', function() {
   let date;
 
   beforeEach(() => {
-    date = new Date(2016, 10, 23);
+    date = "Wed,23,Nov";
     wrapper = shallow(<DateOption dateValue={date}/>);
   });
 
@@ -18,16 +18,13 @@ describe('DateOption Component', function() {
     expect(wrapper.contains('Wed')).to.equal(true);
   });
 
-  // Following tests failing because of use of React-Time -
-  // not fixed by importing React-Time
+  it ('should show the correct date', function() {
+    expect(wrapper.contains('23')).to.equal(true);
+  });
 
-  // it ('should show the correct date', function() {
-  //   expect(wrapper.contains('23')).to.equal(true);
-  // });
-  //
-  // it ('should show the correct month', function() {
-  //   expect(wrapper.contains('Nov')).to.equal(true);
-  // });
+  it ('should show the correct month', function() {
+    expect(wrapper.contains('Nov')).to.equal(true);
+  });
 
 
 })

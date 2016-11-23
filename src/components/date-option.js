@@ -3,18 +3,18 @@ import React from 'react';
 class DateOption extends React.Component {
 
   render() {
-    let day = this.props.dateValue;
+    let day = this.props.dateValue.split(",");
 
     return (
       <div>
         <span className="date-text">
-          {day.substr(0, 3)}<br/>
+          {day[0]}<br/>
         </span>
         <span className="lg-date-text">
-          {day.substr(4,2)}<br/>
+          {day[1]}<br/>
         </span>
         <span className="date-text">
-          {day.substr(7, 3)}
+          {day[2]}
         </span>
       </div>
     );
