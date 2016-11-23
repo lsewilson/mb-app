@@ -1,6 +1,5 @@
 import React from 'react';
 import { expect } from 'chai';
-import sinon from 'sinon';
 import { shallow, mount, render } from 'enzyme';
 import TimesBox from '../src/components/times-box'
 import TimeOption from '../src/components/time-option'
