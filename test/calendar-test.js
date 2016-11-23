@@ -34,4 +34,12 @@ describe('Calendar Component', function() {
     })
 
   })
+
+  // describe('handleClick', function() {
+  //
+  //   it ('calls calendarShown prop', function() {
+  //
+  //   })
+  //
+  // })
 })

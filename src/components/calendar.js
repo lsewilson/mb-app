@@ -33,7 +33,7 @@ class Calendar extends React.Component {
           <p>Well talk to the agent and book it in.</p>
         </div>
         <DatesBox onSelectDay={this.handleDaySelection}/>
-        <TimesBox />
+        <TimesBox bookings={this.props.bookings} currentDay={this.state.currentDay} />
       </div>
     );
   }
