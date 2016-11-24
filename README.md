@@ -2,21 +2,13 @@
 
 This repo contains a recreation of the 'Book a Viewing' feature on the Movebubble app and has been created using React. A demo has been hosted using GitHub pages and can be seen [here](https://lsewilson.github.io/movebubble-app-feature/). It is best viewed on a mobile device, or as a mobile device in a browser (instructions below).
 
-Initial Screen:
+# Contents
 
-![](http://i51.photobucket.com/albums/f366/supersonicrocket/initialscreen.png)
-
-After clicking 'Schedule a Viewing':
-
-![](http://i51.photobucket.com/albums/f366/supersonicrocket/beforeclick_1.png)
-
-After clicking on a date and a time:
-
-![](http://i51.photobucket.com/albums/f366/supersonicrocket/afterclick.png)
-
-After submitting:
-
-![](http://i51.photobucket.com/albums/f366/supersonicrocket/aftersend_1.png)
+* [Installation](#installation)
+* [Running the App](#running-the-app)
+* [To Do](#to-do)
+* [Approach to solution](#approach-to-solution)
+* [App Screenshots](#screenshots)
 
 ## Installation
 
@@ -89,3 +81,21 @@ Once I had a basic shell working and submitting booking requests, I worked out s
 - Changing the text on the button: I originally had difficulty with the asynchronicity of the setState() function. I solved this by including the functions that were dependent on the new state as a callback function.
 - Selecting and unselecting times: this is still not functioning 100% correctly.
 - Fixing tests: improved test coverage and sorted out broken tests.
+
+## Screenshots
+
+Initial Screen:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/initialscreen.png)
+
+After clicking 'Schedule a Viewing':
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/beforeclick_1.png)
+
+After clicking on a date and a time:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/afterclick.png)
+
+After submitting:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/aftersend_1.png)
