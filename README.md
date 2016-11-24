@@ -2,6 +2,22 @@
 
 This repo contains a recreation of the 'Book a Viewing' feature on the Movebubble app and has been created using React. A demo has been hosted using GitHub pages and can be seen [here](https://lsewilson.github.io/movebubble-app-feature/). It is best viewed on a mobile device, or as a mobile device in a browser (instructions below).
 
+Initial Screen:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/initialscreen.png)
+
+After clicking 'Schedule a Viewing':
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/beforeclick_1.png)
+
+After clicking on a date and a time:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/afterclick.png)
+
+After submitting:
+
+![](http://i51.photobucket.com/albums/f366/supersonicrocket/aftersend_1.png)
+
 ## Installation
 
 ### Prerequisites
